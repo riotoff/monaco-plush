@@ -2465,7 +2465,7 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = "--[[\n    Plush Executor\n    dsc.gg/getplush\n ]]";    
+    const defaultText = "--[[\n    Plush - free open source executor\n ]]";    
     if (!content) {
         content = defaultText;
     }
@@ -2528,7 +2528,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "--[[ Plush Executor\n    dsc.gg/getplush\n ]]" : tab.content;        editor.setValue(contentToSet);
+        const contentToSet = tab.content.trim() === '' ? "--[[\n    Plush - free open source executor\n ]]" : tab.content;        editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
     }
@@ -2838,3 +2838,4 @@ function setupAutosave() {
 </body>
 
 </html>
+
